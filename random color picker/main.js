@@ -39,3 +39,4 @@ closeSidebarBtn.addEventListener("click", function () {
     setTimeout(() => {openSidebarBtn.setAttribute("style", "display: block;");}, 285);
     
 });
+ 
