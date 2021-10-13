@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* overflow-x: hidden; */
+}
+
+.container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: whitesmoke;
+    align-items: left;
+}
+
+.block {
+    margin-top: 15%;
+    margin-left: 10%;
+    padding: 2rem;
+    background-color: #2A2A2A;
+    width: max-content;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.btn {
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px dimgray;
+    font-size: 20px;
+    font-weight: 600;
+    width: max-content;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(95, 95, 95);
+    border: none;
+    cursor: pointer;
+    outline: 1px solid whitesmoke;
+    transition: ease-in-out 0.1s;
+}
+
+.btn:hover, 
+.btn:focus {
+    outline: medium double whitesmoke;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: -222px; /* 0px */
+    padding: 3rem 2.4rem;
+    text-align: right;
+    background-color: rgb(42, 42, 42);
+    height: 100vh;
+    color: whitesmoke;
+    width: 222px;
+    align-items: flex-end;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    position: fixed;
+    right: 20px;
+    width: 4rem;
+    cursor: pointer;
+    display: block;
+}
+
+.sidebar h1 {
+    padding-bottom: 3rem;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.sidebar-links {
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sidebar-links:visited {
+    color: whitesmoke;
+    /* color: whitesmoke; */
+}
+
+.sidebar-links:hover, 
+.sidebar-links:focus {
+    outline: none;
+    text-decoration: underline overline 1px;
+}
+
+.social {
+    justify-self: flex-end;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    position: fixed;
+    bottom: 66px;
+}
+
+.social svg {
+    padding: 0.3rem;
+    outline: 1px solid whitesmoke;
+    border-radius: 8px;
+    transition: ease-in-out 0.1s;
+    width: 3rem;
+    background: none;
+    border: none;
+    margin: 0.3rem 0.1rem;
+    cursor: pointer;
+}
+
+/* .social div:hover, 
+.social div:focus {
+    outline: 3px black;
+} */
+
+
