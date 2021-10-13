@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="background">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet" /> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Weblog</title>
+  </head>
+
+  <body class="body">
+    <!-- Sign-UP page -->
+    <div class="sign-up" id="sign-up">
+      <div class="logo">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIuMDAyIDUxMi4wMDIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyLjAwMiA1MTIuMDAyIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI1Ni4wMDEiIHgyPSIyNTYuMDAxIiB5MT0iNTEyLjAwMSIgeTI9Ii4wMDEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2E5M2FmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmODFmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGc+PGc+PHBhdGggZD0ibTIyNi4wMDEgMTUxLjAwMWMtOC4yODQgMC0xNSA2LjcxNi0xNSAxNXM2LjcxNiAxNSAxNSAxNSAxNS02LjcxNiAxNS0xNS02LjcxNS0xNS0xNS0xNXptLTEyMCAwYy04LjI4NCAwLTE1IDYuNzE2LTE1IDE1czYuNzE2IDE1IDE1IDE1IDE1LTYuNzE2IDE1LTE1LTYuNzE1LTE1LTE1LTE1em02MCAwYy04LjI4NCAwLTE1IDYuNzE2LTE1IDE1czYuNzE2IDE1IDE1IDE1IDE1LTYuNzE2IDE1LTE1LTYuNzE1LTE1LTE1LTE1em0zMzguNjE4IDMzMy4wNzgtLjc0MS0uNDM3Yy0xOS4yNTgtMTEuMzQ4LTI2LjIxLTM2LjgyNi0xNS4xOC01NS42MzUgMTUuMjQ1LTI2IDIzLjMwNC01NC4zNTcgMjMuMzA0LTgyLjAwNiAwLTQzLjk3Mi0xNy4zNzYtODUuNDA2LTQ4LjkyOC0xMTYuNjY5LTMxLjQ1My0zMS4xNjctNzMuMDMtNDguMzMxLTExNy4wNzItNDguMzMxLTUuMjY3IDAtMTAuNTI3LjI2Ni0xNS43NTcuNzY1LjQ5NC01LjE5Ljc1Ny0xMC40NDcuNzU3LTE1Ljc2NSAwLTkwLjk5My03My44NjEtMTY2LTE2NS0xNjYtOTEuMDg5IDAtMTY2IDc0LjkzNC0xNjYgMTY2IDAgMjcuNzkgNy43MjIgNTUuMTc4IDIyLjk1MyA4MS40MDQgMTEuMDk0IDE5LjEwMyA0LjExMiA0NC4wNzctMTUuNTY0IDU1LjY3MS0uMTEyLjA2Ni0uMjI4LjEzNi0uMzM5LjIwNi01LjY3NCAzLjU0Ny04LjMxMyAxMC40MjMtNi40NjkgMTYuODU1czcuNzI4IDEwLjg2NSAxNC40MTkgMTAuODY1aDE1MWM1LjMxOCAwIDEwLjU3NC0uMjYzIDE1Ljc2NS0uNzU3LS40OTkgNS4yMy0uNzY1IDEwLjQ5LS43NjUgMTUuNzU3IDAgOTAuOTkzIDczLjg2MSAxNjYgMTY1IDE2NmgxNTFjNi43NjQgMCAxMi42OTEtNC41MjcgMTQuNDcxLTExLjA1MiAxLjc3OS02LjUyNi0xLjAyNy0xMy40MzYtNi44NTQtMTYuODcxem0tMzM4LjYxOC0xODMuMDc4aC0xMTYuNDRjMTEuMzMyLTIwLjk3NCAxMS45NDktNDYuOTQ1LS42NjQtNjguNjYyLTEyLjUzOC0yMS41OS0xOC44OTUtNDMuOTA5LTE4Ljg5NS02Ni4zMzggMC03NC45OTEgNjEuMDA5LTEzNiAxMzYtMTM2IDc0LjQzOSAwIDEzNSA2MS4wMDkgMTM1IDEzNi0uMDAxIDc0LjQzOS02MC41NjEgMTM1LTEzNS4wMDEgMTM1em0yOTYuODE4IDExMS44MzFjLTkuNDQzIDE2LjEwMy0xMS44NjUgMzUuMTU0LTYuODE5IDUzLjY0NCAxLjQ5MiA1LjQ2OSAzLjU3NyAxMC42NjkgNi4xOTYgMTUuNTI2aC0xMTYuMTk1Yy03NC40MzkgMC0xMzUtNjEuMDA5LTEzNS0xMzYgMC03LjMwNi42LTE0LjU5MiAxLjc2NS0yMS43NjEgNTMuNDQyLTE1LjgyMSA5NS42NTMtNTguMDMyIDExMS40NzQtMTExLjQ3NCA3LjE2OS0xLjE2NSAxNC40NTUtMS43NjUgMjEuNzYxLTEuNzY1IDc0Ljk5IDAgMTM2IDYwLjU2MSAxMzYgMTM1IDAgMjIuNjM4LTYuNDU0IDQ1LjEyMy0xOS4xODIgNjYuODN6bS01Ni44MTgtODEuODMxYy04LjI4NCAwLTE1IDYuNzE2LTE1IDE1czYuNzE2IDE1IDE1IDE1IDE1LTYuNzE2IDE1LTE1LTYuNzE1LTE1LTE1LTE1em0tMTIwIDBjLTguMjg0IDAtMTUgNi43MTYtMTUgMTVzNi43MTYgMTUgMTUgMTUgMTUtNi43MTYgMTUtMTUtNi43MTUtMTUtMTUtMTV6bTYwIDBjLTguMjg0IDAtMTUgNi43MTYtMTUgMTVzNi43MTYgMTUgMTUgMTUgMTUtNi43MTYgMTUtMTUtNi43MTUtMTUtMTUtMTV6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjwvZz48L2c+PC9zdmc+"
+        />
+        <p>Weblog</p>
+      </div>
+      <form id="up-form">
+        <div class="div-inform">
+          <label for="up-username" class="label"> Username: </label>
+          <input
+            class="up-username"
+            type="text"
+            name="up-username"
+            id="up-username"
+            placeholder=""
+            required=""
+          />
+          <i ref="images/xicon.png" class="icon"></i>
+          <div class="up-error"></div>
+        </div>
+
+        <div class="div-inform">
+          <label for="email" class="label"> Email: </label>
+          <input
+            class="email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder=""
+            required=""
+          />
+          <i ref="images/xicon.png" class="icon"></i>
+          <div class="up-error"></div>
+        </div>
+
+        <div class="div-inform">
+          <label for="up-password" class="label"> Password: </label>
+          <input
+            class="up-password"
+            type="password"
+            name="up-password"
+            id="up-password"
+            placeholder="********"
+            required=""
+          />
+          <i ref="images/xicon.png" class="icon"></i>
+          <div class="up-error"></div>
+        </div>
+
+        <div class="div-inform">
+          <label for="up-password" class="label"> Repeat password: </label>
+          <input
+            class="up-password"
+            type="password"
+            name="repeat-password"
+            id="repeat-password"
+            placeholder="********"
+            required=""
+          />
+          <i ref="images/xicon.png" class="icon"></i>
+          <div class="up-error"></div>
+          <div class="repeat-error"></div>
+        </div>
+      </form>
+      <button type="submit" id="up-submit">Enter</button>
+      <a class="anchor" href="#sign-in">Sign-in</a>
+      <a class="anchor" href="">Forgot my password</a>
+    </div>
+
+    <!-- Sign-IN Page -->
+    <div class="sign-in" id="sign-in">
+      <div class="logo">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIuMDAyIDUxMi4wMDIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyLjAwMiA1MTIuMDAyIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjI1Ni4wMDEiIHgyPSIyNTYuMDAxIiB5MT0iNTEyLjAwMSIgeTI9Ii4wMDEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2E5M2FmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmODFmZiIvPjwvbGluZWFyR3JhZGllbnQ+PGc+PGc+PHBhdGggZD0ibTIyNi4wMDEgMTUxLjAwMWMtOC4yODQgMC0xNSA2LjcxNi0xNSAxNXM2LjcxNiAxNSAxNSAxNSAxNS02LjcxNiAxNS0xNS02LjcxNS0xNS0xNS0xNXptLTEyMCAwYy04LjI4NCAwLTE1IDYuNzE2LTE1IDE1czYuNzE2IDE1IDE1IDE1IDE1LTYuNzE2IDE1LTE1LTYuNzE1LTE1LTE1LTE1em02MCAwYy04LjI4NCAwLTE1IDYuNzE2LTE1IDE1czYuNzE2IDE1IDE1IDE1IDE1LTYuNzE2IDE1LTE1LTYuNzE1LTE1LTE1LTE1em0zMzguNjE4IDMzMy4wNzgtLjc0MS0uNDM3Yy0xOS4yNTgtMTEuMzQ4LTI2LjIxLTM2LjgyNi0xNS4xOC01NS42MzUgMTUuMjQ1LTI2IDIzLjMwNC01NC4zNTcgMjMuMzA0LTgyLjAwNiAwLTQzLjk3Mi0xNy4zNzYtODUuNDA2LTQ4LjkyOC0xMTYuNjY5LTMxLjQ1My0zMS4xNjctNzMuMDMtNDguMzMxLTExNy4wNzItNDguMzMxLTUuMjY3IDAtMTAuNTI3LjI2Ni0xNS43NTcuNzY1LjQ5NC01LjE5Ljc1Ny0xMC40NDcuNzU3LTE1Ljc2NSAwLTkwLjk5My03My44NjEtMTY2LTE2NS0xNjYtOTEuMDg5IDAtMTY2IDc0LjkzNC0xNjYgMTY2IDAgMjcuNzkgNy43MjIgNTUuMTc4IDIyLjk1MyA4MS40MDQgMTEuMDk0IDE5LjEwMyA0LjExMiA0NC4wNzctMTUuNTY0IDU1LjY3MS0uMTEyLjA2Ni0uMjI4LjEzNi0uMzM5LjIwNi01LjY3NCAzLjU0Ny04LjMxMyAxMC40MjMtNi40NjkgMTYuODU1czcuNzI4IDEwLjg2NSAxNC40MTkgMTAuODY1aDE1MWM1LjMxOCAwIDEwLjU3NC0uMjYzIDE1Ljc2NS0uNzU3LS40OTkgNS4yMy0uNzY1IDEwLjQ5LS43NjUgMTUuNzU3IDAgOTAuOTkzIDczLjg2MSAxNjYgMTY1IDE2NmgxNTFjNi43NjQgMCAxMi42OTEtNC41MjcgMTQuNDcxLTExLjA1MiAxLjc3OS02LjUyNi0xLjAyNy0xMy40MzYtNi44NTQtMTYuODcxem0tMzM4LjYxOC0xODMuMDc4aC0xMTYuNDRjMTEuMzMyLTIwLjk3NCAxMS45NDktNDYuOTQ1LS42NjQtNjguNjYyLTEyLjUzOC0yMS41OS0xOC44OTUtNDMuOTA5LTE4Ljg5NS02Ni4zMzggMC03NC45OTEgNjEuMDA5LTEzNiAxMzYtMTM2IDc0LjQzOSAwIDEzNSA2MS4wMDkgMTM1IDEzNi0uMDAxIDc0LjQzOS02MC41NjEgMTM1LTEzNS4wMDEgMTM1em0yOTYuODE4IDExMS44MzFjLTkuNDQzIDE2LjEwMy0xMS44NjUgMzUuMTU0LTYuODE5IDUzLjY0NCAxLjQ5MiA1LjQ2OSAzLjU3NyAxMC42NjkgNi4xOTYgMTUuNTI2aC0xMTYuMTk1Yy03NC40MzkgMC0xMzUtNjEuMDA5LTEzNS0xMzYgMC03LjMwNi42LTE0LjU5MiAxLjc2NS0yMS43NjEgNTMuNDQyLTE1LjgyMSA5NS42NTMtNTguMDMyIDExMS40NzQtMTExLjQ3NCA3LjE2OS0xLjE2NSAxNC40NTUtMS43NjUgMjEuNzYxLTEuNzY1IDc0Ljk5IDAgMTM2IDYwLjU2MSAxMzYgMTM1IDAgMjIuNjM4LTYuNDU0IDQ1LjEyMy0xOS4xODIgNjYuODN6bS01Ni44MTgtODEuODMxYy04LjI4NCAwLTE1IDYuNzE2LTE1IDE1czYuNzE2IDE1IDE1IDE1IDE1LTYuNzE2IDE1LTE1LTYuNzE1LTE1LTE1LTE1em0tMTIwIDBjLTguMjg0IDAtMTUgNi43MTYtMTUgMTVzNi43MTYgMTUgMTUgMTUgMTUtNi43MTYgMTUtMTUtNi43MTUtMTUtMTUtMTV6bTYwIDBjLTguMjg0IDAtMTUgNi43MTYtMTUgMTVzNi43MTYgMTUgMTUgMTUgMTUtNi43MTYgMTUtMTUtNi43MTUtMTUtMTUtMTV6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIvPjwvZz48L2c+PC9zdmc+"
+        />
+        <p>Weblog</p>
+      </div>
+      <form id="in-form">
+        <div class="div-inform">
+          <label for="in-username" class="label"> Username: </label>
+
+          <input
+            class="in-username"
+            type="text"
+            name="in-username"
+            id="in-username"
+            placeholder=""
+            required=""
+          />
+          <i ref="images/xicon.png" class="icon"></i>
+          <div class="in-error"></div>
+        </div>
+
+        <div class="div-inform">
+          <label for="in-password" class="label"> Password: </label>
+          <input
+            class="in-password"
+            type="password"
+            name="in-password"
+            id="in-password"
+            placeholder="********"
+            required=""
+          />
+          <i ref="images/xicon.png" class="icon"></i>
+          <div class="in-error"></div>
+        </div>
+      </form>
+      <button type="submit" id="in-submit">Submit</button>
+      <a class="anchor" href="#sign-up">Sign-up</a>
+    </div>
+    <footer class="footer">
+      <p>
+        <a href="https://codepen.io/cyberhominid" target="_blank">
+          2021, Isadora</a
+        >. Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
