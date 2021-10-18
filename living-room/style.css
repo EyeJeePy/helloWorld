@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri,sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+}
+
+header {
+    border: none;
+    width: 85.2rem;
+    height: 40.2rem;
+    text-align: center;
+    background-size: contain;
+    background-position: 0 100%;
+    align-items: center;
+    position: fixed;    
+}
+
+header img {
+    object-fit: scale-down;
+    height: 40.2rem;
+}
+
+.open-video {
+    position: fixed;
+    left: 48.4rem;
+    top: 13.89rem;
+    border-radius: 6% / 30%;
+    width: 14.7rem;
+    height: 10.8rem;
+    filter: sepia(0.7);
+    box-shadow: 0 0 15px black;
+}
+
+.open-video img {
+    object-fit: scale-down;
+}
+
+.block {
+    border: none;
+    margin: auto;
+}
+
+.block svg {
+    height: 10rem;
+    position: fixed;
+    z-index: 0;
+    align-self: center;
+    justify-self: center;
+}
+
+h1 {
+    color: whitesmoke;
+    margin: 3rem;
+    text-shadow: 2px 2px 2px rgba(143, 30, 102, 0.652);
+}
+
+.summon-modal {
+    border: none;
+    background: green;
+    margin: auto;
+    cursor: pointer;
+    height: 10rem;
+    z-index: 2;
+    color: mediumvioletred;
+    position: absolute;    
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.summon-modal:active {
+    filter: blur(100);
+}
+
+.overlay-modal {
+    border: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+}
+
+.modal {
+    position: fixed;
+    left: 48.4rem;
+    top: 13.8rem;
+    border-radius: 10.2%;
+    width: 14.7rem;
+    height: 10.8rem;
+    filter: sepia(0.7);
+    box-shadow: 0 0 15px black;
+}
+
+.modal video {
+    position: fixed;
+    left: 48.4rem;
+    top: 13.8rrem;
+    border-radius: 10.2%;
+    filter: sepia(0.7);
+    box-shadow: 0 0 15px black;
+    animation: ;
+}
+
+#video {
+    z-index: -1;
+    top: 0px;
+    left: -2.375rem;
+
+}
+
+p {
+    font-size: 9rem;
+    color: whitesmoke;
+}
+
+h3 {
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
